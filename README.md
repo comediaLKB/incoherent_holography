@@ -1,2 +1,2 @@
 # incoherent_holography
-Example Matlab codes
+Example MATLAB scripts to process experimental data (scattered fields from a 2D incoherent object).
