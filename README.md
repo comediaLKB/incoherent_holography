@@ -11,7 +11,7 @@ System tested: Windows 10, MATLAB 2023a, CPU: i7-8700, GPU: NVIDIA GeForece GTX 
 `main.m`  
 Reconstructs and plots a virtual scattering layer and object image using scattered fields.
 
-`field_data_spiral.mat` 
+`field_data_spiral.mat`  
 Input for "main.m". Contains `E_ret`, a three-dimensional array representing scattered fields in complex amplitude (x, y, index of fields).
 
 `phase_retrieval_example.m`  
