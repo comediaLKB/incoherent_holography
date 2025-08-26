@@ -1,5 +1,8 @@
 % This script reconstructs images using the retrieved fields (E_ret).
-% The field retrieval step is skipped here.
+% E_ret represents mutually incoherent fields of light at the camera plane. 
+% It is expressed in the exponential form (amplitude).*e^(1i*angle) with a single precision.
+% 
+% The field retrieval of E_ret is skipped here. Instead, it is directly loaded from field_data_spiral.mat.
 % For the field retrieval, refer to phase_retrieval_example.m.
 %
 % Requires Matlab 2022b or later due to dlarray.
@@ -311,3 +314,4 @@ function E_out = propagation_spectral(E_in,wavelength,propagation_distance,pixel
     end
 
 end
+
