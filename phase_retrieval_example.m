@@ -5,7 +5,7 @@
 %
 % 'field_data_spiral.mat' provides one example of retrieved fields E_ret.
 % 
-% Requires Matlab 2023a or later due to the MATLAB function "random".
+% Requires MATLAB 2023a or later, due to the MATLAB function "random". Otherwise, Statistics and Machine Learning Toolbox should be installed. 
 % Written by YoonSeok Baek
 
 %% Initialization
@@ -118,5 +118,6 @@ function data = crop_image(data,crop_size,centerArray)
     data = data(centerArray(1)-floor(sizeArray(1)/2):centerArray(1)+ceil(sizeArray(1)/2)-1, ...
         centerArray(2)-floor(sizeArray(2)/2):centerArray(2)+ceil(sizeArray(2)/2)-1,:);
 end
+
 
 
