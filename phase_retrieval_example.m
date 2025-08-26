@@ -1,11 +1,14 @@
 % This script retrieves scattered fields (E_ret) using image_data.mat
-% 'field_data_spiral.mat' provides one example of retrieved results, which is used in main.m
+% image_date.mat includes the camera image (image_data) and corresponding SLM patterns (slmPattern)
+% image_data vairable contains background subtracted camera images converted into single precision.
+% slmPattern variable contains binary phase pattern displayed on the SLM.
+%
+% 'field_data_spiral.mat' provides one example of retrieved fields E_ret.
 % 
 % Written by YoonSeok Baek
 
 %% Initialization
 % load image data for the spiral shaped object
-% image_date.mat includes the camera image (image_data) and corresponding SLM patterns (slmPattern)
 
 clear
 dataName = 'image_data.mat'; 
@@ -114,3 +117,4 @@ function data = crop_image(data,crop_size,centerArray)
     data = data(centerArray(1)-floor(sizeArray(1)/2):centerArray(1)+ceil(sizeArray(1)/2)-1, ...
         centerArray(2)-floor(sizeArray(2)/2):centerArray(2)+ceil(sizeArray(2)/2)-1,:);
 end
+
