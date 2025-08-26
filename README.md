@@ -5,6 +5,7 @@ The results are presented in the paper *Three-dimensional holographic imaging of
 Authors: YoonSeok Baek, Hilton B. de Aguiar, Sylvain Gigan
 
 System tested: Windows 10, MATLAB 2023a, CPU: i7-8700, GPU: NVIDIA GeForece GTX 670, RAM: 64 GB.
+Typical runtime is a few minutes or less.
 
 **Files and Usage**
 
